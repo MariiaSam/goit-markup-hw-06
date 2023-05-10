@@ -25,17 +25,17 @@
         <!-- Navigation-->
         <nav class="container-menu list">
           
-            <a class="logo-nav logo link" href="./index.html"
+            <a class="logo-nav logo link" href="./index.html" target="_blank" rel="noopener noreferrer"
               >Web<span class="logo logo-span">Studio</span></a
             >
 
           <ul class="container-nav list">
             <li class="item-nav">
-              <a class="nav-link studio-link link" href="./index.html">Studio</a>
+              <a class="nav-link studio-link link" href="./index.html" target="_blank" rel="noopener noreferrer">Studio</a>
             </li>
 
             <li class="item-nav">
-              <a class="nav-link link" href="./portfolio.html"
+              <a class="nav-link link" href="./portfolio.html" target="_blank" rel="noopener noreferrer"
                 >Portfolio</a
               >
             </li>
@@ -49,7 +49,7 @@
         <address class="address">
           <ul class="container-address list">
             <li class="item-mail">
-              <a class="address-link link" href="mailto:info@devstudio.com"
+              <a class="address-link link" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer"
                 >info@devstudio.com</a
               >
             </li>
@@ -505,11 +505,18 @@
     </div>
     <div class="form-footer">
       <p class="subscribe-text">Subscribe</p>
-        <form class="subscribe-form">
-          <label>
-            <input type="email" name="email" placeholder="E-mail"/>
-          </label>
-          <button type="submit">Submit</button>
+        <form class="subscribe-form" name="subscribe" autocomplete="on" novalidate method="post">
+         <label>E-mail
+            <input type="email" name="email" placeholder="E-mail" required/>
+       </label>
+       
+       <div>
+          <button>Submit 
+            <svg class="arrow-icon" width="24" height="24">
+              <use href="./images/icons.svg#arrow"></use>
+            </svg>
+          </button> 
+        </div>
         </form>
     </div>
 
@@ -523,6 +530,50 @@
           <use href="./images/icons.svg#close-black"></use>
         </svg>
       </button>
+      
+      <form class="modal-form">
+
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+
+        <label for="modal-name">Name
+          
+          <div><input type="name" name="nme" id="modal-name" placeholder="" required pattern=""/>
+        <svg class="modal-name-icon" width="18" height="18">
+          <use href="./images/icons.svg#name"></use>
+        </svg>
+          </div>
+      </label>
+
+        <label for="modal-phone">Phone
+          <div>
+          <input type="phone" name="phone" id="modal-phone" placeholder="" required pattern=""/>
+          <svg class="modal-phone-icon" width="18" height="24">
+            <use href="./images/icons.svg#phone"></use>
+          </svg>
+        </div> 
+      </label>  
+
+          <label for="modal-email">E-mail
+            <div>
+          <input type="email" name="email" id="modal-email" placeholder="" required pattern=""/>
+          <svg class="modal-email-icon" width="18" height="24">
+            <use href="./images/icons.svg#email"></use>
+          </svg>
+        </label>
+
+        <label>Comment
+       <textarea name="comment" placeholder="Text input"></textarea>
+        </label>
+
+        <label>
+          <input type="checkbox">
+         <span> I accept the terms and conditions of the <a href="">Privacy Policy</a> </span>
+        </label>
+
+        <button>Send</button>
+
+       
+      </form>
     </div>
 
   </div>
