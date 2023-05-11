@@ -538,6 +538,7 @@ Customers*/
 
 .networks-footer {
   display: block;
+  margin-right: 80px;
 }
 
 .list-footer {
@@ -559,6 +560,7 @@ Customers*/
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 40px;
   height: 40px;
 }
@@ -585,6 +587,34 @@ Customers*/
   justify-content: center;
   fill: var(--footer-text-color);
 }
+
+.form-footer{
+  display: block;
+  
+}
+
+.subscribe-text{
+margin-bottom: 16px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+
+color: var(--white-text-color);
+
+outline: 1px solid tomato;
+}
+
+.subscribe-form{
+  display: flex;
+  margin: auto;
+
+}
+
+.subscribe-form-field{
+
+}
+
 
 /*Portfolio*/
 .section-btn {
