@@ -30,6 +30,7 @@
 
   --portf-bordercolor: #e7e9fc;
 }
+
 body {
   font-family: var(--primary-font);
   color: var(--main-text-color);
@@ -606,6 +607,12 @@ outline: 1px solid tomato;
 }
 
 .subscribe-form{
+  width: ;
+  margin: ;
+  padding: ;
+  text-align: center;
+
+  
   display: flex;
   margin: auto;
 
