@@ -994,21 +994,27 @@ border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: -16px;
   margin-bottom: 24px;
+  gap: 8px;
 }
+
+
 
 .unchecked-icon{
   opacity: 1;
+  stroke:  rgba(46, 47, 66, 0.4);
 }
   
-  .checkbox-icon{
-  opacity: 0;}
+  .checked-icon{
+  opacity: 0;
+}
   
-  .checkbox-input:checked + .checkbox-icon > .unchecked-icon{
+.checkbox-input:checked + .checkbox-icon > .unchecked-icon {
     opacity: 0;
 }
   
-.checkbox-input:checked + .checkbox-icon > .checked-icon{
+.checkbox-input:checked + .checkbox-icon > .checked-icon {
     opacity: 1;
 }
 
